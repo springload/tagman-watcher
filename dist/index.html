@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<input type="text">
+<select multiple><option>one</option><option>two, three</option></select>
+<script src="tagman-watcher.js"></script>
+<script>
+    tagmanWatch('change', 'input', {'event':'my-name'});
+
+    tagmanWatch.trigger('change', {'event':'what'});
+</script>
+</html>
